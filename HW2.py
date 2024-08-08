@@ -107,7 +107,7 @@ def CrossEntropyLoss(groundtruth, predictions):
 
 
 class TwoLayerNN:
-    def __init__(self, neuron=40):
+    def __init__(self, neuron=50):
         self.hidden_neuron = neuron
         self.w1 = np.random.random((neuron, 3)) * np.sqrt(1. / 3)
         self.w2 = np.random.random((3, neuron)) * np.sqrt(1. / 3)
